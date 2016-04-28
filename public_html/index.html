@@ -9,9 +9,23 @@
             <br>
             <br>
             <fieldset>
-                <legend> Receita </legend>
+                <legend> Receita <input name="ativo" type="radio" class="form_1" value="S" onclick="if(document.getElementById('titulo').disabled==true)
+                    {document.getElementById('titulo').disabled=false}"/>Frequente  <input name="ativo" 
+                    type="radio" class="form_1" value="N" onclick="if(document.getElementById('titulo').disabled==false)
+                        {document.getElementById('titulo').disabled=true}"/>Eventual</legend>
+
+                <select name="receita_freq" >
+                    <option value="energia">Energia</option>
+                    <option value="salario13">13 Salário</option>
+                    <option value="aposentadoria">Aposentadoria</option>
+                    <option value="ferias">Férias</option>
+                </select>
+                <br><br>
+
+
+
                 <p>
-                    <label>Descricao:
+                    <label>Descrição:
                         <input id="fullname" name="descricao" type="text" placeholder="Entre com descricao da receita" autofocus="" required="" size="50">
                     </label>
                 </p>
